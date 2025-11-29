@@ -8,7 +8,7 @@ function validateConfig() {
     // Check required fields
     if (!config.valentineName) {
         warnings.push("Valentine's name is not set! Using default.");
-        config.valentineName = "My Wifey";
+        config.valentineName = " My Wifey";
     }
 
     // Validate colors
@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', () => {
     validateConfig();
 
     // Set texts from config
-    document.getElementById('valentineTitle').textContent = `${config.valentineName},My Wifey`;
+    document.getElementById('valentineTitle').textContent = `${config.valentineName}, My Wifey`;
     
     // Set first question texts
     document.getElementById('question1Text').textContent = config.questions.first.text;
